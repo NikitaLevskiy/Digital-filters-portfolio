@@ -2,16 +2,14 @@ clear all;
 clc;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Bandpass filter (BPF)
-% Order (N-1), sampling frequency (Fs), cutoff frequencies (Fc1 and Fc2).
+% Lowpass filter (LPF)
+% Order (N-1), sampling frequency (Fs), cutoff frequency (Fc).
 N = 32;
 Fs = 1e6;
-Fc1 = 150e3;
-Fc2 = 300e3;
+Fc = 200e3;
 
-% Normalised cutoff frequencies of bandpass filter (Wc1 and Wc2).
-Wc1 = 2 * pi * Fc1 / Fs;
-Wc2 = 2 * pi * Fc2 / Fs;
+% Normalised cutoff frequency of a lowpass filter (Wc).
+Wc = 2 * pi * Fc / Fs;
 
 % Filter indexes (n and m).
 n = [0:N-1];
@@ -29,12 +27,11 @@ for i = 1:N
 
     if i == N/2 + 1
         
-        h(i) = (Wc2 - Wc1) / pi;
+        h(i) = Wc / pi;
     
     else
 
-        h(i) =  (sin(Wc2 * (n(i) - m)) - sin(Wc1 * (n(i) - m))) ...
-              / (pi * (n(i) - m));
+        h(i) =  sin(Wc * (n(i) - m)) / (pi * (n(i) - m));
 
     end  
 
@@ -49,7 +46,7 @@ f = [0:step:Fs/2];
 
 for i = 1:length(f)
 
-    Hbp(i) = sum(h .* exp(-1j * 2 * pi * f(i) .* (n - m) / Fs));
+    Hlp(i) = sum(h .* exp(-1j * 2 * pi * f(i) .* (n - m) / Fs));
 
 end
 
@@ -74,7 +71,7 @@ axis([xmin xmax ymin ymax]);
 
 subplot(2, 2, 3);
 xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
-plot(f, 20*log10(abs(Hbp)));
+plot(f, 20*log10(abs(Hlp)));
 title('Subplot 3: Transfer function of a bandpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);

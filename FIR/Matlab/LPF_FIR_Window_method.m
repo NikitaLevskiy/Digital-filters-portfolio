@@ -87,6 +87,6 @@ fft_spectrum(2:end-1) = 2*fft_spectrum(2:end-1);
 subplot(2, 2, 4);
 xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
 plot(f_fft, 20*log10(fft_spectrum / max(fft_spectrum)));
-title('Subplot 3: Measured transfer function of a lowpass filter.');
+title('Subplot 4: Measured transfer function of a lowpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);

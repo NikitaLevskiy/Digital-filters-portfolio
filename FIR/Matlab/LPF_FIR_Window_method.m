@@ -58,20 +58,35 @@ figure;
 subplot(2, 2, 1);
 xmin = 0; xmax = N-1; ymin = -25; ymax = 5;
 plot(n, 20*log10(w));
-title('Subplot 1: Window function of a bandpass filter.');
+title('Subplot 1: Window function of a lowpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);
 
 subplot(2, 2, 2);
 xmin = 0; xmax = N-1; ymin = min(h); ymax = max(h);
 stem(n, h);
-title('Subplot 2: Impulse response of a bandpass filter.');
+title('Subplot 2: Impulse response of a lowpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);
 
 subplot(2, 2, 3);
 xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
 plot(f, 20*log10(abs(Hlp)));
-title('Subplot 3: Transfer function of a bandpass filter.');
+title('Subplot 3: Transfer function of a lowpass filter.');
+grid on;
+axis([xmin xmax ymin ymax]);
+
+load('filter_output.mat');
+L = 128;
+f_fft = Fs * (0:(L/2)) / L;
+fft_spectrum = fft(s);
+fft_spectrum = abs(fft_spectrum / L);
+fft_spectrum = fft_spectrum(1:L/2+1);
+fft_spectrum(2:end-1) = 2*fft_spectrum(2:end-1);
+
+subplot(2, 2, 4);
+xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
+plot(f_fft, 20*log10(fft_spectrum / max(fft_spectrum)));
+title('Subplot 3: Measured transfer function of a lowpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);

@@ -45,7 +45,7 @@ int main() {
 	};
 	
 	// Output data array
-	int output_data_array[ORDER+1];
+	int output_data_array[SAMPLES];
 	
 	// Filter initialization
 	Filter fir_filter;

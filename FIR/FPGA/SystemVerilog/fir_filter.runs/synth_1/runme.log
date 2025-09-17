@@ -1,0 +1,546 @@
+
+*** Running vivado
+    with args -log fir_filter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Sep 17 11:45:42 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fir_filter.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 497.441 ; gain = 212.203
+Command: synth_design -top fir_filter -part xc7s25csga225-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13836
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1150.750 ; gain = 491.316
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9448] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'fir_filter' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mac' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized0' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb1111111101110001 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized0' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized1' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb1111111101111111 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized1' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized2' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0000000011000011 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized2' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized3' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0000000111010010 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized3' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized4' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb1111110001011000 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized4' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized5' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb1111110011101001 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized5' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized6' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0000010000101011 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized6' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized7' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0000100100001001 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized7' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized8' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb1110111101100110 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized8' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized9' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb1111000101011010 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized9' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized10' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0001011100001110 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized10' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized11' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0100110011000101 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized11' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized12' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0110011001100110 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized12' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6157] synthesizing module 'mac__parameterized13' [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter COEF_WIDTH bound to: 16 - type: integer 
+	Parameter COEF bound to: 16'sb0000000001100110 
+INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized13' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:121]
+INFO: [Synth 8-6155] done synthesizing module 'fir_filter' (0#1) [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sv:3]
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_i in module mac__parameterized12 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1260.027 ; gain = 600.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1260.027 ; gain = 600.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1260.027 ; gain = 600.594
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1260.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/constraints.xdc]
+Finished Parsing XDC File [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1348.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1348.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1348.195 ; gain = 688.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1348.195 ; gain = 688.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1348.195 ; gain = 688.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1348.195 ; gain = 688.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 31    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP genblk2[0].filter_core/data_o0, operation Mode is: (A:0x0)'*B.
+DSP Report: register genblk2[0].filter_core/rom_reg_reg is absorbed into DSP genblk2[0].filter_core/data_o0.
+DSP Report: operator genblk2[0].filter_core/data_o0 is absorbed into DSP genblk2[0].filter_core/data_o0.
+DSP Report: operator genblk2[0].filter_core/data_o1 is absorbed into DSP genblk2[0].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[1].filter_core/data_o0, operation Mode is: PCIN+(A:0x3fffff71)'*B.
+DSP Report: register genblk2[1].filter_core/rom_reg_reg is absorbed into DSP genblk2[1].filter_core/data_o0.
+DSP Report: operator genblk2[1].filter_core/data_o0 is absorbed into DSP genblk2[1].filter_core/data_o0.
+DSP Report: operator genblk2[1].filter_core/data_o1 is absorbed into DSP genblk2[1].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[2].filter_core/data_o0, operation Mode is: PCIN+(A:0x3fffff7f)'*B.
+DSP Report: register genblk2[2].filter_core/rom_reg_reg is absorbed into DSP genblk2[2].filter_core/data_o0.
+DSP Report: operator genblk2[2].filter_core/data_o0 is absorbed into DSP genblk2[2].filter_core/data_o0.
+DSP Report: operator genblk2[2].filter_core/data_o1 is absorbed into DSP genblk2[2].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[3].filter_core/data_o0, operation Mode is: PCIN+(A:0xc3)'*B.
+DSP Report: register genblk2[3].filter_core/rom_reg_reg is absorbed into DSP genblk2[3].filter_core/data_o0.
+DSP Report: operator genblk2[3].filter_core/data_o0 is absorbed into DSP genblk2[3].filter_core/data_o0.
+DSP Report: operator genblk2[3].filter_core/data_o1 is absorbed into DSP genblk2[3].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[4].filter_core/data_o0, operation Mode is: PCIN+(A:0x1d2)'*B.
+DSP Report: register genblk2[4].filter_core/rom_reg_reg is absorbed into DSP genblk2[4].filter_core/data_o0.
+DSP Report: operator genblk2[4].filter_core/data_o0 is absorbed into DSP genblk2[4].filter_core/data_o0.
+DSP Report: operator genblk2[4].filter_core/data_o1 is absorbed into DSP genblk2[4].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[5].filter_core/data_o0, operation Mode is: PCIN+(A:0x0)'*B.
+DSP Report: register genblk2[0].filter_core/rom_reg_reg is absorbed into DSP genblk2[5].filter_core/data_o0.
+DSP Report: operator genblk2[5].filter_core/data_o0 is absorbed into DSP genblk2[5].filter_core/data_o0.
+DSP Report: operator genblk2[5].filter_core/data_o1 is absorbed into DSP genblk2[5].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[6].filter_core/data_o0, operation Mode is: PCIN+(A:0x3ffffc58)'*B.
+DSP Report: register genblk2[6].filter_core/rom_reg_reg is absorbed into DSP genblk2[6].filter_core/data_o0.
+DSP Report: operator genblk2[6].filter_core/data_o0 is absorbed into DSP genblk2[6].filter_core/data_o0.
+DSP Report: operator genblk2[6].filter_core/data_o1 is absorbed into DSP genblk2[6].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[7].filter_core/data_o0, operation Mode is: PCIN+(A:0x3ffffce9)'*B.
+DSP Report: register genblk2[7].filter_core/rom_reg_reg is absorbed into DSP genblk2[7].filter_core/data_o0.
+DSP Report: operator genblk2[7].filter_core/data_o0 is absorbed into DSP genblk2[7].filter_core/data_o0.
+DSP Report: operator genblk2[7].filter_core/data_o1 is absorbed into DSP genblk2[7].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[8].filter_core/data_o0, operation Mode is: PCIN+(A:0x42b)'*B.
+DSP Report: register genblk2[8].filter_core/rom_reg_reg is absorbed into DSP genblk2[8].filter_core/data_o0.
+DSP Report: operator genblk2[8].filter_core/data_o0 is absorbed into DSP genblk2[8].filter_core/data_o0.
+DSP Report: operator genblk2[8].filter_core/data_o1 is absorbed into DSP genblk2[8].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[9].filter_core/data_o0, operation Mode is: PCIN+(A:0x909)'*B.
+DSP Report: register genblk2[9].filter_core/rom_reg_reg is absorbed into DSP genblk2[9].filter_core/data_o0.
+DSP Report: operator genblk2[9].filter_core/data_o0 is absorbed into DSP genblk2[9].filter_core/data_o0.
+DSP Report: operator genblk2[9].filter_core/data_o1 is absorbed into DSP genblk2[9].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[10].filter_core/data_o0, operation Mode is: PCIN+(A:0x0)'*B.
+DSP Report: register genblk2[0].filter_core/rom_reg_reg is absorbed into DSP genblk2[10].filter_core/data_o0.
+DSP Report: operator genblk2[10].filter_core/data_o0 is absorbed into DSP genblk2[10].filter_core/data_o0.
+DSP Report: operator genblk2[10].filter_core/data_o1 is absorbed into DSP genblk2[10].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[11].filter_core/data_o0, operation Mode is: PCIN+(A:0x3fffef66)'*B.
+DSP Report: register genblk2[11].filter_core/rom_reg_reg is absorbed into DSP genblk2[11].filter_core/data_o0.
+DSP Report: operator genblk2[11].filter_core/data_o0 is absorbed into DSP genblk2[11].filter_core/data_o0.
+DSP Report: operator genblk2[11].filter_core/data_o1 is absorbed into DSP genblk2[11].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[12].filter_core/data_o0, operation Mode is: PCIN+(A:0x3ffff15a)'*B.
+DSP Report: register genblk2[12].filter_core/rom_reg_reg is absorbed into DSP genblk2[12].filter_core/data_o0.
+DSP Report: operator genblk2[12].filter_core/data_o0 is absorbed into DSP genblk2[12].filter_core/data_o0.
+DSP Report: operator genblk2[12].filter_core/data_o1 is absorbed into DSP genblk2[12].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[13].filter_core/data_o0, operation Mode is: PCIN+(A:0x170e)'*B.
+DSP Report: register genblk2[13].filter_core/rom_reg_reg is absorbed into DSP genblk2[13].filter_core/data_o0.
+DSP Report: operator genblk2[13].filter_core/data_o0 is absorbed into DSP genblk2[13].filter_core/data_o0.
+DSP Report: operator genblk2[13].filter_core/data_o1 is absorbed into DSP genblk2[13].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[14].filter_core/data_o0, operation Mode is: PCIN+(A:0x4cc5)'*B.
+DSP Report: register genblk2[14].filter_core/rom_reg_reg is absorbed into DSP genblk2[14].filter_core/data_o0.
+DSP Report: operator genblk2[14].filter_core/data_o0 is absorbed into DSP genblk2[14].filter_core/data_o0.
+DSP Report: operator genblk2[14].filter_core/data_o1 is absorbed into DSP genblk2[14].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[15].filter_core/data_o0, operation Mode is: PCIN+(A:0x6666)'*B.
+DSP Report: register genblk2[15].filter_core/rom_reg_reg is absorbed into DSP genblk2[15].filter_core/data_o0.
+DSP Report: operator genblk2[15].filter_core/data_o0 is absorbed into DSP genblk2[15].filter_core/data_o0.
+DSP Report: operator genblk2[15].filter_core/data_o1 is absorbed into DSP genblk2[15].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[16].filter_core/data_o0, operation Mode is: PCIN+(A:0x4cc5)'*B.
+DSP Report: register genblk2[14].filter_core/rom_reg_reg is absorbed into DSP genblk2[16].filter_core/data_o0.
+DSP Report: operator genblk2[16].filter_core/data_o0 is absorbed into DSP genblk2[16].filter_core/data_o0.
+DSP Report: operator genblk2[16].filter_core/data_o1 is absorbed into DSP genblk2[16].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[17].filter_core/data_o0, operation Mode is: PCIN+(A:0x170e)'*B.
+DSP Report: register genblk2[13].filter_core/rom_reg_reg is absorbed into DSP genblk2[17].filter_core/data_o0.
+DSP Report: operator genblk2[17].filter_core/data_o0 is absorbed into DSP genblk2[17].filter_core/data_o0.
+DSP Report: operator genblk2[17].filter_core/data_o1 is absorbed into DSP genblk2[17].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[18].filter_core/data_o0, operation Mode is: PCIN+(A:0x3ffff15a)'*B.
+DSP Report: register genblk2[12].filter_core/rom_reg_reg is absorbed into DSP genblk2[18].filter_core/data_o0.
+DSP Report: operator genblk2[18].filter_core/data_o0 is absorbed into DSP genblk2[18].filter_core/data_o0.
+DSP Report: operator genblk2[18].filter_core/data_o1 is absorbed into DSP genblk2[18].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[19].filter_core/data_o0, operation Mode is: PCIN+(A:0x3fffef66)'*B.
+DSP Report: register genblk2[11].filter_core/rom_reg_reg is absorbed into DSP genblk2[19].filter_core/data_o0.
+DSP Report: operator genblk2[19].filter_core/data_o0 is absorbed into DSP genblk2[19].filter_core/data_o0.
+DSP Report: operator genblk2[19].filter_core/data_o1 is absorbed into DSP genblk2[19].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[20].filter_core/data_o0, operation Mode is: PCIN+(A:0x0)'*B.
+DSP Report: register genblk2[0].filter_core/rom_reg_reg is absorbed into DSP genblk2[20].filter_core/data_o0.
+DSP Report: operator genblk2[20].filter_core/data_o0 is absorbed into DSP genblk2[20].filter_core/data_o0.
+DSP Report: operator genblk2[20].filter_core/data_o1 is absorbed into DSP genblk2[20].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[21].filter_core/data_o0, operation Mode is: PCIN+(A:0x909)'*B.
+DSP Report: register genblk2[9].filter_core/rom_reg_reg is absorbed into DSP genblk2[21].filter_core/data_o0.
+DSP Report: operator genblk2[21].filter_core/data_o0 is absorbed into DSP genblk2[21].filter_core/data_o0.
+DSP Report: operator genblk2[21].filter_core/data_o1 is absorbed into DSP genblk2[21].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[22].filter_core/data_o0, operation Mode is: PCIN+(A:0x42b)'*B.
+DSP Report: register genblk2[8].filter_core/rom_reg_reg is absorbed into DSP genblk2[22].filter_core/data_o0.
+DSP Report: operator genblk2[22].filter_core/data_o0 is absorbed into DSP genblk2[22].filter_core/data_o0.
+DSP Report: operator genblk2[22].filter_core/data_o1 is absorbed into DSP genblk2[22].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[23].filter_core/data_o0, operation Mode is: PCIN+(A:0x3ffffce9)'*B.
+DSP Report: register genblk2[7].filter_core/rom_reg_reg is absorbed into DSP genblk2[23].filter_core/data_o0.
+DSP Report: operator genblk2[23].filter_core/data_o0 is absorbed into DSP genblk2[23].filter_core/data_o0.
+DSP Report: operator genblk2[23].filter_core/data_o1 is absorbed into DSP genblk2[23].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[24].filter_core/data_o0, operation Mode is: PCIN+(A:0x3ffffc58)'*B.
+DSP Report: register genblk2[6].filter_core/rom_reg_reg is absorbed into DSP genblk2[24].filter_core/data_o0.
+DSP Report: operator genblk2[24].filter_core/data_o0 is absorbed into DSP genblk2[24].filter_core/data_o0.
+DSP Report: operator genblk2[24].filter_core/data_o1 is absorbed into DSP genblk2[24].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[25].filter_core/data_o0, operation Mode is: PCIN+(A:0x0)'*B.
+DSP Report: register genblk2[0].filter_core/rom_reg_reg is absorbed into DSP genblk2[25].filter_core/data_o0.
+DSP Report: operator genblk2[25].filter_core/data_o0 is absorbed into DSP genblk2[25].filter_core/data_o0.
+DSP Report: operator genblk2[25].filter_core/data_o1 is absorbed into DSP genblk2[25].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[26].filter_core/data_o0, operation Mode is: PCIN+(A:0x1d2)'*B.
+DSP Report: register genblk2[4].filter_core/rom_reg_reg is absorbed into DSP genblk2[26].filter_core/data_o0.
+DSP Report: operator genblk2[26].filter_core/data_o0 is absorbed into DSP genblk2[26].filter_core/data_o0.
+DSP Report: operator genblk2[26].filter_core/data_o1 is absorbed into DSP genblk2[26].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[27].filter_core/data_o0, operation Mode is: PCIN+(A:0xc3)'*B.
+DSP Report: register genblk2[3].filter_core/rom_reg_reg is absorbed into DSP genblk2[27].filter_core/data_o0.
+DSP Report: operator genblk2[27].filter_core/data_o0 is absorbed into DSP genblk2[27].filter_core/data_o0.
+DSP Report: operator genblk2[27].filter_core/data_o1 is absorbed into DSP genblk2[27].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[28].filter_core/data_o0, operation Mode is: PCIN+(A:0x3fffff7f)'*B.
+DSP Report: register genblk2[2].filter_core/rom_reg_reg is absorbed into DSP genblk2[28].filter_core/data_o0.
+DSP Report: operator genblk2[28].filter_core/data_o0 is absorbed into DSP genblk2[28].filter_core/data_o0.
+DSP Report: operator genblk2[28].filter_core/data_o1 is absorbed into DSP genblk2[28].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[29].filter_core/data_o0, operation Mode is: PCIN+(A:0x3fffff71)'*B.
+DSP Report: register genblk2[1].filter_core/rom_reg_reg is absorbed into DSP genblk2[29].filter_core/data_o0.
+DSP Report: operator genblk2[29].filter_core/data_o0 is absorbed into DSP genblk2[29].filter_core/data_o0.
+DSP Report: operator genblk2[29].filter_core/data_o1 is absorbed into DSP genblk2[29].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[30].filter_core/data_o0, operation Mode is: PCIN+(A:0x0)'*B.
+DSP Report: register genblk2[0].filter_core/rom_reg_reg is absorbed into DSP genblk2[30].filter_core/data_o0.
+DSP Report: operator genblk2[30].filter_core/data_o0 is absorbed into DSP genblk2[30].filter_core/data_o0.
+DSP Report: operator genblk2[30].filter_core/data_o1 is absorbed into DSP genblk2[30].filter_core/data_o0.
+DSP Report: Generating DSP genblk2[31].filter_core/data_o0, operation Mode is: PCIN+(A:0x66)'*B.
+DSP Report: register genblk2[31].filter_core/rom_reg_reg is absorbed into DSP genblk2[31].filter_core/data_o0.
+DSP Report: operator genblk2[31].filter_core/data_o0 is absorbed into DSP genblk2[31].filter_core/data_o0.
+DSP Report: operator genblk2[31].filter_core/data_o1 is absorbed into DSP genblk2[31].filter_core/data_o0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1348.195 ; gain = 688.762
+---------------------------------------------------------------------------------
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 0 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 1 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 2 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 3 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 4 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 5 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 6 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 7 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 8 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 9 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 10 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 11 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 12 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 13 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 14 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 15 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 16 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 17 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 18 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 19 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 20 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 21 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 22 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 23 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 24 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 25 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 26 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 27 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 28 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 29 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 30 : 904 28928 : Used 1 time 0
+ Sort Area is  genblk2[0].filter_core/data_o0_0 : 0 31 : 904 28928 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac         | (A:0x0)'*B             | 8      | 16     | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3fffff71)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3fffff7f)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0xc3)'*B       | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x1d2)'*B      | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x0)'*B        | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3ffffc58)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3ffffce9)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x42b)'*B      | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x909)'*B      | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x0)'*B        | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3fffef66)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3ffff15a)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x170e)'*B     | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x4cc5)'*B     | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x6666)'*B     | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x4cc5)'*B     | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x170e)'*B     | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3ffff15a)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3fffef66)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x0)'*B        | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x909)'*B      | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x42b)'*B      | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3ffffce9)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3ffffc58)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x0)'*B        | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x1d2)'*B      | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0xc3)'*B       | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3fffff7f)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x3fffff71)'*B | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x0)'*B        | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+(A:0x66)'*B       | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1521.098 ; gain = 861.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1528.812 ; gain = 869.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1539.605 ; gain = 880.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac         | A*B         | 30     | 0      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 13     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 15     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 15     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 15     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 13     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 12     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 11     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 9      | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 8      | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 7      | 18     | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 8      | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 9      | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 30     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 11     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mac         | PCIN+A'*B   | 12     | 18     | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |DSP48E1 |    32|
+|4     |FDCE    |   248|
+|5     |IBUF    |    11|
+|6     |OBUF    |     8|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1771.465 ; gain = 1023.863
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1771.465 ; gain = 1112.031
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1777.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1780.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fabc178c
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1780.727 ; gain = 1283.285
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1780.727 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.runs/synth_1/fir_filter.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fir_filter_utilization_synth.rpt -pb fir_filter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 17 11:46:29 2025...

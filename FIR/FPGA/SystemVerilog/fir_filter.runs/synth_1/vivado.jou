@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Sep 17 11:45:42 2025
+# Process ID         : 35284
+# Current directory  : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.runs/synth_1
+# Command line       : vivado.exe -log fir_filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter.tcl
+# Log file           : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.runs/synth_1/fir_filter.vds
+# Journal file       : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.runs/synth_1\vivado.jou
+# Running On         : Mykyta
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16908 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 36235 MB
+# Available Virtual  : 15072 MB
+#-----------------------------------------------------------
+source fir_filter.tcl -notrace

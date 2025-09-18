@@ -57,9 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s25csga225-2
 
@@ -88,6 +85,8 @@ read_xdc C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FI
 set_property used_in_implementation false [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.srcs/utils_1/imports/synth_1/fir_filter.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

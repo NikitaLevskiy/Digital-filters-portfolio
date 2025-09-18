@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Sep 18 10:43:40 2025
+# Process ID         : 20044
+# Current directory  : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent35576 C:\Users\nikit\OneDrive\Desktop\GITHUB_PRJ\Digital-filters-portfolio\FIR\FPGA\SystemVerilog\fir_filter.xpr
+# Log file           : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/vivado.log
+# Journal file       : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog\vivado.jou
+# Running On         : Mykyta
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16908 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 36235 MB
+# Available Virtual  : 14247 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter_tb_behav.wcfg
+source fir_filter_tb.tcl
+run 1 ms
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter_tb_behav.wcfg
+source fir_filter_tb.tcl
+run 1 ms
+save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter_tb_behav.wcfg}
+close_sim
+close_design

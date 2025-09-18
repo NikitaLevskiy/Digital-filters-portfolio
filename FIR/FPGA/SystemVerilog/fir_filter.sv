@@ -35,9 +35,9 @@ module fir_filter
 	
 	generate
 	
-		logic signed [DATA_WIDTH-1:0] data_i_reg [ORDER-1:0];
+		logic signed [DATA_WIDTH-1:0] data_i_reg [2*ORDER-1:0];
 	
-		for (i = 0; i < ORDER; i = i + 1) begin
+		for (i = 0; i < 2*ORDER; i = i + 1) begin
 		
 			always_ff @(posedge clk_i, posedge rst_i) begin
 			
@@ -98,7 +98,7 @@ module fir_filter
 					.rst_i(rst_i),
 					.clk_i(clk_i),
 					.ena_i(ena_i),
-					.data_i(data_i_reg[i-1]),
+					.data_i(data_i_reg[2*i-1]),
 					.add_i(adder[i-1]),
 					.data_o(adder[i])
 				);
@@ -179,9 +179,17 @@ module mac
 	
 	logic signed [DATA_WIDTH+COEF_WIDTH-1:0] adder;
 	
-	always_comb begin
+	always_ff @(posedge clk_i or posedge rst_i) begin
 	
-		adder = add_i + mul;
+		if (rst_i) begin
+		
+			adder <= 'd0;
+		
+		end else begin
+		
+			adder <= add_i + mul;
+		
+		end
 	
 	end
 	

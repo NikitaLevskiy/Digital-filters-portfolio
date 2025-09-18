@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter.sim/sim_1/synth/func/xsim/fir_filter_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_filter
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-311] analyzing module mac_0
+INFO: [VRFC 10-311] analyzing module mac_12
+INFO: [VRFC 10-311] analyzing module mac_5
+INFO: [VRFC 10-311] analyzing module mac_6
+INFO: [VRFC 10-311] analyzing module mac_9
+INFO: [VRFC 10-311] analyzing module mac__parameterized0
+INFO: [VRFC 10-311] analyzing module mac__parameterized0_7
+INFO: [VRFC 10-311] analyzing module mac__parameterized1
+INFO: [VRFC 10-311] analyzing module mac__parameterized10
+INFO: [VRFC 10-311] analyzing module mac__parameterized10_2
+INFO: [VRFC 10-311] analyzing module mac__parameterized11
+INFO: [VRFC 10-311] analyzing module mac__parameterized11_1
+INFO: [VRFC 10-311] analyzing module mac__parameterized12
+INFO: [VRFC 10-311] analyzing module mac__parameterized13
+INFO: [VRFC 10-311] analyzing module mac__parameterized1_8
+INFO: [VRFC 10-311] analyzing module mac__parameterized2
+INFO: [VRFC 10-311] analyzing module mac__parameterized2_10
+INFO: [VRFC 10-311] analyzing module mac__parameterized3
+INFO: [VRFC 10-311] analyzing module mac__parameterized3_11
+INFO: [VRFC 10-311] analyzing module mac__parameterized4
+INFO: [VRFC 10-311] analyzing module mac__parameterized4_13
+INFO: [VRFC 10-311] analyzing module mac__parameterized5
+INFO: [VRFC 10-311] analyzing module mac__parameterized5_14
+INFO: [VRFC 10-311] analyzing module mac__parameterized6
+INFO: [VRFC 10-311] analyzing module mac__parameterized6_15
+INFO: [VRFC 10-311] analyzing module mac__parameterized7
+INFO: [VRFC 10-311] analyzing module mac__parameterized7_16
+INFO: [VRFC 10-311] analyzing module mac__parameterized8
+INFO: [VRFC 10-311] analyzing module mac__parameterized8_4
+INFO: [VRFC 10-311] analyzing module mac__parameterized9
+INFO: [VRFC 10-311] analyzing module mac__parameterized9_3
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter_tb.v" into library xil_defaultlib
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/FIR/FPGA/SystemVerilog/fir_filter_tb.v:1]
+INFO: [VRFC 10-311] analyzing module fir_filter_tb

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s25csga225-2" LaunchTime="1758102339">
+<GenRun Id="synth_1" LaunchPart="xc7s25csga225-2" LaunchTime="1758185255" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fir_filter.dcp">
   <File Type="PA-TCL" Name="fir_filter.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="fir_filter_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fir_filter_reports.tcl"/>
   <File Type="RDS-RDS" Name="fir_filter.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="fir_filter_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="fir_filter_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="fir_filter_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="fir_filter.dcp"/>
@@ -38,14 +38,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/fir_filter.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

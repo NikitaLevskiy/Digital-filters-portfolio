@@ -1,0 +1,56 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot fir_filter_tb_func_synth xil_defaultlib.fir_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.mac
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.mac_0
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.mac__parameterized8
+Compiling module xil_defaultlib.mac__parameterized9
+Compiling module xil_defaultlib.mac__parameterized10
+Compiling module xil_defaultlib.mac__parameterized11
+Compiling module xil_defaultlib.mac__parameterized12
+Compiling module xil_defaultlib.mac__parameterized11_1
+Compiling module xil_defaultlib.mac__parameterized10_2
+Compiling module xil_defaultlib.mac__parameterized9_3
+Compiling module xil_defaultlib.mac__parameterized8_4
+Compiling module xil_defaultlib.mac__parameterized0
+Compiling module xil_defaultlib.mac_5
+Compiling module xil_defaultlib.mac__parameterized7
+Compiling module xil_defaultlib.mac__parameterized6
+Compiling module xil_defaultlib.mac__parameterized5
+Compiling module xil_defaultlib.mac__parameterized4
+Compiling module xil_defaultlib.mac_6
+Compiling module xil_defaultlib.mac__parameterized3
+Compiling module xil_defaultlib.mac__parameterized2
+Compiling module xil_defaultlib.mac__parameterized1
+Compiling module xil_defaultlib.mac__parameterized0_7
+Compiling module xil_defaultlib.mac__parameterized1_8
+Compiling module xil_defaultlib.mac_9
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.mac__parameterized13
+Compiling module xil_defaultlib.mac__parameterized2_10
+Compiling module xil_defaultlib.mac__parameterized3_11
+Compiling module xil_defaultlib.mac_12
+Compiling module xil_defaultlib.mac__parameterized4_13
+Compiling module xil_defaultlib.mac__parameterized5_14
+Compiling module xil_defaultlib.mac__parameterized6_15
+Compiling module xil_defaultlib.mac__parameterized7_16
+Compiling module xil_defaultlib.fir_filter
+Compiling module xil_defaultlib.fir_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fir_filter_tb_func_synth

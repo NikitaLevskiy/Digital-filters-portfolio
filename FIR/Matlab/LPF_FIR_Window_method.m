@@ -82,7 +82,7 @@ f_fft = Fs * (0:(L/2)) / L;
 fft_spectrum = fft(s);
 fft_spectrum = abs(fft_spectrum / L);
 fft_spectrum = fft_spectrum(1:L/2+1);
-fft_spectrum(2:end-1) = 2*fft_spectrum(2:end-1);
+fft_spectrum(1:end-1) = 2*fft_spectrum(1:end-1);
 
 subplot(2, 2, 4);
 xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;

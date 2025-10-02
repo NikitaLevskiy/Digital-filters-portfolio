@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cic_filter
+INFO: [VRFC 10-311] analyzing module memory

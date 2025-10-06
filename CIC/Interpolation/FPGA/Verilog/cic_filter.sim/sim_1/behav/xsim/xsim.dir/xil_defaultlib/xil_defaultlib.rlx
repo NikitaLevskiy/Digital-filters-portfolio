@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog/cic_filter.v,1759769979,verilog,,,,cic_filter;memory,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog/cic_filter_tb.v,1759771011,verilog,,,,cic_filter_tb,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog/fir_filter.sv,1759770582,systemVerilog,,,,fir_filter;mac,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

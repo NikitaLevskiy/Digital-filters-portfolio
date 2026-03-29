@@ -3,13 +3,13 @@ clc;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Lowpass filter (LPF)
-% Order (N-1), sampling frequency (Fs), cutoff frequency (Fc).
+% Order (N-1), sampling frequency (fs), cutoff frequency (fc).
 N = 32;
-Fs = 1000;
-Fc = 200;
+fs = 10e3;
+fc = 1e3;
 
-% Normalised cutoff frequency of a lowpass filter (Wc).
-Wc = 2 * pi * Fc / Fs;
+% Normalised cutoff frequency of a lowpass filter (wc).
+wc = 2 * pi * fc / fs;
 
 % Filter indexes (n and m).
 n = [0:N-1];
@@ -27,11 +27,11 @@ for i = 1:N
 
     if i == N/2 + 1
         
-        h(i) = Wc / pi;
+        h(i) = wc / pi;
     
     else
 
-        h(i) =  sin(Wc * (n(i) - m)) / (pi * (n(i) - m));
+        h(i) =  sin(wc * (n(i) - m)) / (pi * (n(i) - m));
 
     end  
 
@@ -40,25 +40,25 @@ end
 % Applying window to the calculated impulse response (h).
 h = h .* w;
 
-% Calculation of transfer function of the filter (H).
+% Calculation of transfer function of the filter (h_lp).
 step = 1;
-f = [0:step:Fs/2];
+f_lp = [0:step:fs/2];
 
-for i = 1:length(f)
+for i = 1:length(f_lp)
 
-    Hlp(i) = sum(h .* exp(-1j * 2 * pi * f(i) .* (n - m) / Fs));
+    h_lp(i) = sum(h .* exp(-1j * 2 * pi * f_lp(i) .* (n - m) / fs));
 
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Highpass filter (HPF)
-% Order (N-1), sampling frequency (Fs), cutoff frequency (Fc).
+% Order (N-1), sampling frequency (fs), cutoff frequency (fc).
 N = 32;
-Fs = 1000;
-Fc = 200;
+fs = 10e3;
+fc = 2e3;
 
-% Normalised cutoff frequency of a lowpass filter (Wc).
-Wc = 2 * pi * Fc / Fs;
+% Normalised cutoff frequency of a lowpass filter (wc).
+wc = 2 * pi * fc / fs;
 
 % Filter indexes (n and m).
 n = [0:N-1];
@@ -76,11 +76,11 @@ for i = 1:N
 
     if i == N/2 + 1
         
-        h(i) = 1 - Wc / pi;
+        h(i) = 1 - wc / pi;
     
     else
 
-        h(i) = (sin(pi * (n(i) - m)) - sin(Wc * (n(i) - m))) ...
+        h(i) = (sin(pi * (n(i) - m)) - sin(wc * (n(i) - m))) ...
                 / (pi * (n(i) - m));
 
     end  
@@ -90,27 +90,27 @@ end
 % Applying window to the calculated impulse response (h).
 h = h .* w;
 
-% Calculation of transfer function of the filter (H).
+% Calculation of transfer function of the filter (h_hp).
 step = 1;
-f = [0:step:Fs/2];
+f_hp = [0:step:fs/2];
 
-for i = 1:length(f)
+for i = 1:length(f_hp)
 
-    Hhp(i) = sum(h .* exp(-1j * 2 * pi * f(i) .* (n - m) / Fs));
+    h_hp(i) = sum(h .* exp(-1j * 2 * pi * f_hp(i) .* (n - m) / fs));
 
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bandpass filter (BPF)
-% Order (N-1), sampling frequency (Fs), cutoff frequencies (Fc1 and Fc2).
+% Order (N-1), sampling frequency (fs), cutoff frequencies (fc1 and fc2).
 N = 32;
-Fs = 1000;
-Fc1 = 50;
-Fc2 = 200;
+fs = 100e3;
+fc1 = 10e3;
+fc2 = 30e3;
 
-% Normalised cutoff frequencies of bandpass filter (Wc1 and Wc2).
-Wc1 = 2 * pi * Fc1 / Fs;
-Wc2 = 2 * pi * Fc2 / Fs;
+% Normalised cutoff frequencies of bandpass filter (wc1 and wc2).
+wc1 = 2 * pi * fc1 / fs;
+wc2 = 2 * pi * fc2 / fs;
 
 % Filter indexes (n and m).
 n = [0:N-1];
@@ -128,11 +128,11 @@ for i = 1:N
 
     if i == N/2 + 1
         
-        h(i) = (Wc2 - Wc1) / pi;
+        h(i) = (wc2 - wc1) / pi;
     
     else
 
-        h(i) =  (sin(Wc2 * (n(i) - m)) - sin(Wc1 * (n(i) - m))) ...
+        h(i) =  (sin(wc2 * (n(i) - m)) - sin(wc1 * (n(i) - m))) ...
               / (pi * (n(i) - m));
 
     end  
@@ -142,27 +142,27 @@ end
 % Applying window to the calculated impulse response (h).
 h = h .* w;
 
-% Calculation of transfer function of the filter (H).
+% Calculation of transfer function of the filter (h_bp).
 step = 1;
-f = [0:step:Fs/2];
+f_bp = [0:step:fs/2];
 
-for i = 1:length(f)
+for i = 1:length(f_bp)
 
-    Hbp(i) = sum(h .* exp(-1j * 2 * pi * f(i) .* (n - m) / Fs));
+    h_bp(i) = sum(h .* exp(-1j * 2 * pi * f_bp(i) .* (n - m) / fs));
 
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Bandstop filter (BPF)
-% Order (N-1), sampling frequency (Fs), cutoff frequencies (Fc1 and Fc2).
+% Bandstop filter (BSF)
+% Order (n-1), sampling frequency (fs), cutoff frequencies (fc1 and fc2).
 N = 32;
-Fs = 1000;
-Fc1 = 50;
-Fc2 = 200;
+fs = 100e3;
+fc1 = 10e3;
+fc2 = 30e3;
 
 % Normalised cutoff frequencies of bandpass filter (Wc1 and Wc2).
-Wc1 = 2 * pi * Fc1 / Fs;
-Wc2 = 2 * pi * Fc2 / Fs;
+wc1 = 2 * pi * fc1 / fs;
+wc2 = 2 * pi * fc2 / fs;
 
 % Filter indexes (n and m).
 n = [0:N-1];
@@ -180,11 +180,11 @@ for i = 1:N
 
     if i == N/2 + 1
         
-        h(i) = 1 + (Wc1 - Wc2) / pi;
+        h(i) = 1 + (wc1 - wc2) / pi;
     
     else
 
-        h(i) =  (sin(Wc1 * (n(i) - m)) - sin(Wc2 * (n(i) - m)) + ...
+        h(i) =  (sin(wc1 * (n(i) - m)) - sin(wc2 * (n(i) - m)) + ...
                  sin(pi * (n(i) - m))) / (pi * (n(i) - m));
 
     end  
@@ -196,11 +196,11 @@ h = h .* w;
 
 % Calculation of transfer function of the filter (H).
 step = 1;
-f = [0:step:Fs/2];
+f_bs = [0:step:fs/2];
 
-for i = 1:length(f)
+for i = 1:length(f_bs)
 
-    Hbs(i) = sum(h .* exp(-1j * 2 * pi * f(i) .* (n - m) / Fs));
+    h_bs(i) = sum(h .* exp(-1j * 2 * pi * f_bs(i) .* (n - m) / fs));
 
 end
 
@@ -208,29 +208,29 @@ end
 % Plots
 % Transfer function plots for every filter topology.
 subplot(2,2,1);
-xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
-plot(f, 20*log10(abs(Hlp)));
+xmin = 0; xmax = 5e3; ymin = -100; ymax = 10;
+plot(f_lp, 20*log10(abs(h_lp)));
 title('Subplot 1: Transfer function of a lowpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);
 
 subplot(2,2,2);
-xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
-plot(f, 20*log10(abs(Hhp)));
+xmin = 0; xmax = 5e3; ymin = -100; ymax = 10;
+plot(f_hp, 20*log10(abs(h_hp)));
 title('Subplot 2: Transfer function of a highpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);
 
 subplot(2, 2, 3);
-xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
-plot(f, 20*log10(abs(Hbp)));
+xmin = 0; xmax = 50e3; ymin = -100; ymax = 10;
+plot(f_bp, 20*log10(abs(h_bp)));
 title('Subplot 3: Transfer function of a bandpass filter.');
 grid on;
 axis([xmin xmax ymin ymax]);
 
 subplot(2, 2, 4);
-xmin = 0; xmax = Fs/2; ymin = -100; ymax = 10;
-plot(f, 20*log10(abs(Hbs)));
+xmin = 0; xmax = 50e3; ymin = -100; ymax = 10;
+plot(f_bs, 20*log10(abs(h_bs)));
 title('Subplot 4: Transfer function of a bandstop filter.');
 grid on;
 axis([xmin xmax ymin ymax]);

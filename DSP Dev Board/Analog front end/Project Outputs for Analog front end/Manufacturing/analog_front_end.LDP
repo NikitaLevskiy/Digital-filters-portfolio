@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\nikit\OneDrive\Desktop\GITHUB_PRJ\Digital-filters-portfolio\STM32 DSP Dev Board\Analog front end\Board.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=analog_front_end-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=analog_front_end-slotholes.txt|DrillLayers=gtl,g1,g2,gbl

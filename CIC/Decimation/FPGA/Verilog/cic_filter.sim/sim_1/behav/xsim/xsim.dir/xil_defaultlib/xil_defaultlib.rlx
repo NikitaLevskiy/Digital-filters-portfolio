@@ -2,7 +2,7 @@
 2020.2
 May 22 2025
 00:13:55
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v,1775842256,verilog,,,,cic_decimator;comb;counter;integrator;time_domain_change,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v,1775842955,verilog,,,,cic_decimator_tb,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
 C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim/glbl.v,1775376576,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v,1775825615,verilog,,,,cic_decimator;comb;counter;dual_port_ram;integrator,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v,1775830577,verilog,,,,cic_decimator_tb,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv,1775824287,systemVerilog,,,,fir_filter;mac,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/fir_filter.sv,1775824287,systemVerilog,,,,fir_filter;mac,,uvm,../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

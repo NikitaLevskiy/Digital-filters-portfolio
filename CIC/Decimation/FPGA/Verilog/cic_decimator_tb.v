@@ -6,7 +6,7 @@ module cic_decimator_tb();
 	*/
 	
 	localparam DATA_WIDTH = 18;
-	localparam DELAY = 2;
+	localparam DELAY = 1;
 	localparam R = 32;
 	
 	 reg                         rst_in_i;

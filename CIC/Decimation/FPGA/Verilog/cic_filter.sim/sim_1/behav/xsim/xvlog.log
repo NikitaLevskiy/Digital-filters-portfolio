@@ -1,3 +1,3 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v" into library xil_defaultlib
-WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v:1]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v" into library xil_defaultlib
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v:1]
 INFO: [VRFC 10-311] analyzing module cic_decimator_tb

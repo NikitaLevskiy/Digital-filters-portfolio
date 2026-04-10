@@ -3,23 +3,23 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Fri Apr 10 16:08:54 2026
-# Process ID         : 32800
+# Start of session at: Fri Apr 10 19:39:00 2026
+# Process ID         : 16852
 # Current directory  : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent30724 C:\Users\nikit\OneDrive\Desktop\GITHUB_PRJ\Digital-filters-portfolio\CIC\Decimation\FPGA\Verilog\cic_filter.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent11792 C:\Users\nikit\OneDrive\Desktop\GITHUB_PRJ\Digital-filters-portfolio\CIC\Decimation\FPGA\Verilog\cic_filter.xpr
 # Log file           : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/vivado.log
 # Journal file       : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog\vivado.jou
 # Running On         : Mykyta
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
 # Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
-# CPU Frequency      : 1497 MHz
+# CPU Frequency      : 1498 MHz
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 16908 MB
-# Swap memory        : 41947 MB
-# Total Virtual      : 58855 MB
-# Available Virtual  : 8172 MB
+# Swap memory        : 16929 MB
+# Total Virtual      : 33837 MB
+# Available Virtual  : 29493 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.xpr
@@ -109,9 +109,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.gen/sources_1'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/fir_filter.sv'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.v'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb.v'.
 Scanning sources...
 Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/Xilinx/2025.1/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
@@ -136,167 +133,74 @@ WARNING: [Project 1-5713] Board part '' set for the project  is not found. Board
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1589.898 ; gain = 192.500
-update_compile_order -fileset sim_1
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1593.926 ; gain = 195.531
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/fir_filter.sv] -no_script -reset -force -quiet
-remove_files  C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/fir_filter.sv
-export_ip_user_files -of_objects  [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.v] -no_script -reset -force -quiet
-remove_files  C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.v
-add_files -norecurse -scan_for_includes {C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv}
-update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cic_decimator'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/2025.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'cic_decimator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cic_decimator_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cic_decimator_behav xil_defaultlib.cic_decimator xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cic_decimator_behav xil_defaultlib.cic_decimator xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cic_decimator_behav -key {Behavioral:sim_1:Functional:cic_decimator} -tclbatch {cic_decimator.tcl} -view {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg
+WARNING: Simulation object /cic_decimator_tb/rst_in_i was not found in the design.
+WARNING: Simulation object /cic_decimator_tb/filter_data_input was not found in the design.
+WARNING: Simulation object /cic_decimator_tb/filter_data_output was not found in the design.
+source cic_decimator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cic_decimator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1638.137 ; gain = 20.305
+current_wave_config {cic_filter_tb_behav.wcfg}
+cic_filter_tb_behav.wcfg
+add_wave {{/cic_decimator/rst_in_i}} 
+current_wave_config {cic_filter_tb_behav.wcfg}
+cic_filter_tb_behav.wcfg
+add_wave {{/cic_decimator/data_i}} 
+current_wave_config {cic_filter_tb_behav.wcfg}
+cic_filter_tb_behav.wcfg
+add_wave {{/cic_decimator/data_o}} 
+run 2 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v
 update_compile_order -fileset sim_1
-export_ip_user_files -of_objects  [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb.v] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb.v
 update_compile_order -fileset sim_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7vx485tffg1157-1
-Top: cic_decimator
-INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 36252
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2597.102 ; gain = 493.656
----------------------------------------------------------------------------------
-WARNING: [Synth 8-9448] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'cic_decimator' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:1]
-INFO: [Synth 8-6157] synthesizing module 'integrator' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:104]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'integrator' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:104]
-INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:259]
-	Parameter MODULE bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:259]
-INFO: [Synth 8-6157] synthesizing module 'dual_port_ram' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:212]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:212]
-INFO: [Synth 8-6157] synthesizing module 'comb' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:158]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'comb' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:158]
-INFO: [Synth 8-6157] synthesizing module 'fir_filter' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:3]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'mac' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000000000110 
-INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized0' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111111111011 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized0' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized1' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000000000001 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized1' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized2' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000000000111 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized2' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized3' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111111101101 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized3' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized4' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000000100001 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized4' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized5' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111111010100 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized5' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized6' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000000101010 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized6' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized7' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111111101011 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized7' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized8' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111111101000 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized8' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized9' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000001011100 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized9' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized10' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111101010000 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized10' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized11' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000100000010 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized11' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized12' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111011001001 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized12' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized13' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000000011110000 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized13' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized14' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb0000011101100111 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized14' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6157] synthesizing module 'mac__parameterized15' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
-	Parameter COEF_WIDTH bound to: 16 - type: integer 
-	Parameter COEF bound to: 16'sb1111111111111001 
-INFO: [Synth 8-6155] done synthesizing module 'mac__parameterized15' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:115]
-INFO: [Synth 8-6155] done synthesizing module 'fir_filter' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'cic_decimator' (0#1) [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:1]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2704.805 ; gain = 601.359
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2704.805 ; gain = 601.359
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2704.805 ; gain = 601.359
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2704.805 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2807.109 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 3177.410 ; gain = 1073.965
-52 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 3177.410 ; gain = 1539.527
-close_design
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'cic_decimator_tb'
@@ -309,22 +213,10 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -L uvm -prj cic_decimator_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module cic_decimator
-INFO: [VRFC 10-311] analyzing module integrator
-INFO: [VRFC 10-311] analyzing module comb
-INFO: [VRFC 10-311] analyzing module dual_port_ram
-INFO: [VRFC 10-311] analyzing module counter
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv" into library xil_defaultlib
-WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv:1]
-INFO: [VRFC 10-311] analyzing module fir_filter
-INFO: [VRFC 10-311] analyzing module mac
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v" into library xil_defaultlib
-WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v:1]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v" into library xil_defaultlib
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v:1]
 INFO: [VRFC 10-311] analyzing module cic_decimator_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cic_decimator_tb_behav xil_defaultlib.cic_decimator_tb xil_defaultlib.glbl -log elaborate.log"
@@ -335,24 +227,23 @@ Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena_r_i' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:60]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 104. Module integrator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 259. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 212. Module dual_port_ram(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 158. Module comb(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 104. Module integrator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 259. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 212. Module dual_port_ram(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 158. Module comb(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 103. Module integrator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 276. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 211. Module time_domain_change(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 157. Module comb(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 103. Module integrator(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 276. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 211. Module time_domain_change(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 157. Module comb(DATA_WIDTH=18,DELAY=2) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.integrator(DATA_WIDTH=18,DELAY=2...
 Compiling module xil_defaultlib.counter(MODULE=32)
-Compiling module xil_defaultlib.dual_port_ram(DATA_WIDTH=18)
+Compiling module xil_defaultlib.time_domain_change(DATA_WIDTH=18...
 Compiling module xil_defaultlib.comb(DATA_WIDTH=18,DELAY=2)
 Compiling module xil_defaultlib.mac(DATA_WIDTH=18)
 Compiling module xil_defaultlib.fir_filter(DATA_WIDTH=18)
@@ -368,14 +259,6 @@ INFO: [USF-XSim-98] *** Running xsim
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
 open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg
-WARNING: Simulation object /cic_filter_tb/w_rst_i was not found in the design.
-WARNING: Simulation object /cic_filter_tb/r_rst_i was not found in the design.
-WARNING: Simulation object /cic_filter_tb/w_clk_i was not found in the design.
-WARNING: Simulation object /cic_filter_tb/r_clk_i was not found in the design.
-WARNING: Simulation object /cic_filter_tb/w_ena_i was not found in the design.
-WARNING: Simulation object /cic_filter_tb/r_ena_i was not found in the design.
-WARNING: Simulation object /cic_filter_tb/pulse was not found in the design.
-WARNING: Simulation object /cic_filter_tb/filter_data_out was not found in the design.
 source cic_decimator_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -389,27 +272,11 @@ source cic_decimator_tb.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'cic_decimator_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 3189.844 ; gain = 0.000
-current_wave_config {cic_filter_tb_behav.wcfg}
-cic_filter_tb_behav.wcfg
-add_wave {{/cic_decimator_tb/rst_in_i}} 
-current_wave_config {cic_filter_tb_behav.wcfg}
-cic_filter_tb_behav.wcfg
-add_wave {{/cic_decimator_tb/filter_data_input}} 
-current_wave_config {cic_filter_tb_behav.wcfg}
-cic_filter_tb_behav.wcfg
-add_wave {{/cic_decimator_tb/filter_data_output}} 
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1655.332 ; gain = 0.000
 run 2 ms
 run 2 ms
-save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nikit\OneDrive\Desktop\vivado_test_cic_filter\cic_decimator.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nikit\OneDrive\Desktop\vivado_test_cic_filter\cic_decimator_tb.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nikit\OneDrive\Desktop\vivado_test_cic_filter\cic_decimator_tb.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\nikit\OneDrive\Desktop\vivado_test_cic_filter\cic_decimator_tb.v:]
-launch_simulation
-Command: launch_simulation 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'cic_decimator_tb'
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
@@ -420,10 +287,14 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -L uvm -prj cic_decimator_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v" into library xil_defaultlib
-WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v:1]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v" into library xil_defaultlib
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator_tb.v:1]
 INFO: [VRFC 10-311] analyzing module cic_decimator_tb
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'cic_decimator_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cic_decimator_tb_behav xil_defaultlib.cic_decimator_tb xil_defaultlib.glbl -log elaborate.log"
@@ -434,24 +305,23 @@ Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena_r_i' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:60]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 104. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 259. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 212. Module dual_port_ram(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 158. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 104. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 259. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 212. Module dual_port_ram(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 158. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 103. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 276. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 211. Module time_domain_change(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 157. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 103. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 276. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 211. Module time_domain_change(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 157. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.integrator(DATA_WIDTH=18)
 Compiling module xil_defaultlib.counter(MODULE=32)
-Compiling module xil_defaultlib.dual_port_ram(DATA_WIDTH=18)
+Compiling module xil_defaultlib.time_domain_change(DATA_WIDTH=18...
 Compiling module xil_defaultlib.comb(DATA_WIDTH=18)
 Compiling module xil_defaultlib.mac(DATA_WIDTH=18)
 Compiling module xil_defaultlib.fir_filter(DATA_WIDTH=18)
@@ -460,32 +330,12 @@ Compiling module xil_defaultlib.cic_decimator_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot cic_decimator_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "cic_decimator_tb_behav -key {Behavioral:sim_1:Functional:cic_decimator_tb} -tclbatch {cic_decimator_tb.tcl} -view {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg
-source cic_decimator_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'cic_decimator_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 4725.734 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.332 ; gain = 0.000
 run 2 ms
 run 2 ms
-save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg}
 save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg}
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 10 16:17:03 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 10 19:43:49 2026...

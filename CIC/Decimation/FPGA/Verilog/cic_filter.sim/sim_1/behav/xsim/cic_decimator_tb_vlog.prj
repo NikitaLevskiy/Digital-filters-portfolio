@@ -1,12 +1,12 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  --include "../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
-"../../../../../../../../../../vivado_test_cic_filter/cic_decimator.v" \
+"../../../../cic_decimator.v" \
 
 sv xil_defaultlib  --include "../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
-"../../../../../../../../../../vivado_test_cic_filter/fir_filter.sv" \
+"../../../../fir_filter.sv" \
 
 verilog xil_defaultlib  --include "../../../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
-"../../../../../../../../../../vivado_test_cic_filter/cic_decimator_tb.v" \
+"../../../../cic_decimator_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -5,24 +5,23 @@ Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena_r_i' [C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v:60]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 104. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 259. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 212. Module dual_port_ram(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 158. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 104. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 259. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 212. Module dual_port_ram(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v" Line 158. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 103. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 276. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 211. Module time_domain_change(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 157. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 1. Module cic_decimator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 103. Module integrator(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 276. Module counter(MODULE=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 211. Module time_domain_change(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_decimator.v" Line 157. Module comb(DATA_WIDTH=18) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.integrator(DATA_WIDTH=18)
 Compiling module xil_defaultlib.counter(MODULE=32)
-Compiling module xil_defaultlib.dual_port_ram(DATA_WIDTH=18)
+Compiling module xil_defaultlib.time_domain_change(DATA_WIDTH=18...
 Compiling module xil_defaultlib.comb(DATA_WIDTH=18)
 Compiling module xil_defaultlib.mac(DATA_WIDTH=18)
 Compiling module xil_defaultlib.fir_filter(DATA_WIDTH=18)

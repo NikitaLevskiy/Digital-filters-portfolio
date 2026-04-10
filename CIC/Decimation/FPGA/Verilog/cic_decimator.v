@@ -32,42 +32,41 @@ module cic_decimator
 	
 	
 	// Select Nth sample
-	wire memory_enable;
+	wire data_enable;
 	
 	counter #(
 		.MODULE(R)
 	) counter_inst (
 		.rst_i(rst_in_i),
 		.clk_i(clk_in_i),
-		.ena_o(memory_enable)
+		.ena_o(data_enable)
 	);
 	
 	
-	// Dual port ram
-	wire signed [DATA_WIDTH-1:0] ram_input;
-	wire signed [DATA_WIDTH-1:0] ram_output;
+	// Change time domain
+	wire signed [DATA_WIDTH-1:0] data_reg_input;
+	wire signed [DATA_WIDTH-1:0] data_reg_output;
 	
-	assign ram_input = integrator_output;
+	assign data_reg_input = integrator_output;
 	
-	dual_port_ram #(
+	time_domain_change #(
 		.DATA_WIDTH(DATA_WIDTH)
-	) dual_port_ram_inst (
+	) time_domain_change_inst (
 		.rst_w_i(rst_in_i),
 		.rst_r_i(rst_out_i),
 		.clk_w_i(clk_in_i),
 		.clk_r_i(clk_out_i),
-		.ena_w_i(memory_enable),
-		.ena_r_i(MEM_ENA_READ),
-		.data_i(ram_input),
-		.data_o(ram_output)
+		.ena_i(data_enable),
+		.data_i(data_reg_input),
+		.data_o(data_reg_output)
 	);
-	
+
 	
 	// Comb
 	wire signed [DATA_WIDTH-1:0] comb_input;
 	wire signed [DATA_WIDTH-1:0] comb_output;
 	
-	assign comb_input = ram_output;
+	assign comb_input = data_reg_output;
 	
 	comb #(
 		.DATA_WIDTH(DATA_WIDTH),
@@ -209,7 +208,7 @@ module comb
 
 endmodule
 
-module dual_port_ram
+module time_domain_change
 #(
 	parameter DATA_WIDTH = 12
 )(
@@ -217,42 +216,60 @@ module dual_port_ram
 	 input wire                         rst_r_i,
 	 input wire                         clk_w_i,
 	 input wire                         clk_r_i,
-	 input wire                         ena_w_i,
-	 input wire                         ena_r_i,
+	 input wire                         ena_i,
 	 input wire signed [DATA_WIDTH-1:0] data_i,
-	output reg  signed [DATA_WIDTH-1:0] data_o
+	output wire signed [DATA_WIDTH-1:0] data_o
 );
 
-	(* rom_style="{distributed | block}" *)
-	reg signed [DATA_WIDTH-1:0] ram;
+	reg signed [DATA_WIDTH-1:0] data_i_reg;
 	
 	always @(posedge clk_w_i) begin
 	
 		if (rst_w_i) begin
 		
-			ram <= 'b0;
+			data_i_reg <= 'b0;
 		
-		end else if (ena_w_i) begin
+		end else if (ena_i) begin
 		
-			ram <= data_i;
-		
-		end
-	
-	end
-	
-	always @(posedge clk_r_i) begin
-	
-		if (rst_r_i) begin
-		
-			data_o <= 'b0;
-		
-		end else if (ena_r_i) begin
-		
-			data_o <= ram;
+			data_i_reg <= data_i;
 		
 		end
 	
 	end
+
+
+	genvar i;
+	
+	generate
+	
+		reg signed [DATA_WIDTH-1:0] time_domain_change_reg [1:0];
+	
+		for (i = 0; i < 2; i = i + 1) begin
+		
+			always @(posedge clk_r_i) begin
+			
+				if (rst_r_i) begin
+				
+					time_domain_change_reg[i] <= 'b0;
+				
+				end else if (i == 0) begin
+				
+					time_domain_change_reg[i] <= data_i_reg;
+				
+				end else begin
+				
+					time_domain_change_reg[i] <= time_domain_change_reg[i-1];
+				
+				end
+			
+			end
+		
+		end
+	
+	endgenerate
+	
+	
+	assign data_o = time_domain_change_reg[1];
 	
 endmodule
 

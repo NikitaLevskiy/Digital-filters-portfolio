@@ -1,7 +1,7 @@
-Running: xsim.dir/cic_decimator_tb_behav/xsimk.exe -simmode gui -wdb cic_decimator_tb_behav.wdb -simrunnum 0 -socket 64665
+Running: xsim.dir/cic_decimator_tb_behav/xsimk.exe -simmode gui -wdb cic_decimator_tb_behav.wdb -simrunnum 0 -socket 64896
 Design successfully loaded
-Design Loading Memory Usage: 10804 KB (Peak: 10804 KB)
-Design Loading CPU Usage: 93 ms
+Design Loading Memory Usage: 10916 KB (Peak: 10916 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 11888 KB (Peak: 11888 KB)
-Simulation CPU Usage: 171 ms
+Simulation Memory Usage: 11720 KB (Peak: 11720 KB)
+Simulation CPU Usage: 46 ms

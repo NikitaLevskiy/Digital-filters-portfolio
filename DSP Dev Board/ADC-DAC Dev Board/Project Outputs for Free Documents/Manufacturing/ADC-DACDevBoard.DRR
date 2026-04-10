@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Board.PcbDoc   08/04/2026  20:24:01
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ADC-DACDevBoard-RoundHoles.TXT
+ASCII SlotHoles File : ADC-DACDevBoard-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             49        PTH        374.60mm (14.75inch)
+T2      1mm (39mil)                                               Round             30        PTH        208.59mm (8.21inch)
+T3      1mm (39mil)                                               Slot              3         PTH        29.18mm (1.15inch)
+T4      2mm (79mil)                                               Round             6         PTH        49.06mm (1.93inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              88
+
+Total Processing Time (hh:mm:ss) : 00:00:00

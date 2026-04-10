@@ -2,14 +2,12 @@
 
 module fir_filter
 #(
-	parameter DATA_WIDTH = 8
+	parameter DATA_WIDTH = 12
 )
 (
 	 input logic                         rst_i,
 	 input logic                         clk_i,
-	 input logic                         ena_i,
 	 input logic signed [DATA_WIDTH-1:0] data_i,
-	 
 	output logic signed [DATA_WIDTH-1:0] data_o 
 );
 
@@ -18,7 +16,7 @@ module fir_filter
 	*/
 
 	localparam COEF_WIDTH = 16;
-	localparam ORDER = 62;
+	localparam ORDER = 31;
 
 
 	/*
@@ -26,14 +24,10 @@ module fir_filter
 	*/	
 
 	localparam signed [COEF_WIDTH-1:0] h [ORDER:0] = {
-		-16'd27,    16'd16,    16'd37,   -16'd3,    -16'd52,  -16'd20,   16'd67,    16'd64,
-		-16'd67,   -16'd128,   16'd33,    16'd204,   16'd60,  -16'd256, -16'd218,   16'd240,
-		 16'd430,  -16'd96,   -16'd635,  -16'd212,   16'd746,  16'd704, -16'd622,  -16'd1321,
-		 16'd110,   16'd1960,  16'd1036, -16'd2389, -16'd3407, 16'd1939, 16'd10707, 16'd15042,
-		 16'd10707, 16'd1939, -16'd3407, -16'd2389,  16'd1036, 16'd1960, 16'd110,  -16'd1321,
-		-16'd622,   16'd704,   16'd746,  -16'd212,  -16'd635, -16'd96,   16'd430,   16'd240,
-		-16'd218,  -16'd256,   16'd60,    16'd204,   16'd33,  -16'd128, -16'd67,    16'd64,
-		 16'd67,   -16'd20,   -16'd52,   -16'd3,     16'd37,   16'd16,  -16'd27
+		-16'd7,    16'd6,   -16'd5,   16'd1,    16'd7,  -16'd19,   16'd33, -16'd44,
+		 16'd42,  -16'd21,  -16'd24,  16'd92,  -16'd176, 16'd258, -16'd311, 16'd240,
+		 16'd1895, 16'd240, -16'd311, 16'd258, -16'd176, 16'd92,  -16'd24, -16'd21,
+		 16'd42,  -16'd44,   16'd33, -16'd19,   16'd7,   16'd1,   -16'd5,   16'd6
 	}; 
 	
 	
@@ -57,19 +51,11 @@ module fir_filter
 				
 				end else if (i == 0) begin
 				
-					if (ena_i) begin
-					
-						data_i_reg[i] <= data_i;
-					
-					end
+					data_i_reg[i] <= data_i;
 				
 				end else begin
-				
-					if (ena_i) begin
 					
-						data_i_reg[i] <= data_i_reg[i-1];
-					
-					end
+					data_i_reg[i] <= data_i_reg[i-1];
 				
 				end
 			
@@ -92,7 +78,6 @@ module fir_filter
 				) filter_core (
 					.rst_i(rst_i),
 					.clk_i(clk_i),
-					.ena_i(ena_i),
 					.data_i(data_i),
 					.add_i(adder_0),
 					.data_o(adder[i])
@@ -107,7 +92,6 @@ module fir_filter
 				) filter_core (
 					.rst_i(rst_i),
 					.clk_i(clk_i),
-					.ena_i(ena_i),
 					.data_i(data_i_reg[2*i-1]),
 					.add_i(adder[i-1]),
 					.data_o(adder[i])
@@ -137,7 +121,6 @@ module mac
 (
 	 input logic                                    rst_i,
 	 input logic                                    clk_i,
-	 input logic                                    ena_i,
 	 input logic signed            [DATA_WIDTH-1:0] data_i,
 	 input logic signed [DATA_WIDTH+COEF_WIDTH-1:0] add_i,
 	 
@@ -149,23 +132,18 @@ module mac
 	*/
 
 	(* rom_style="{distributed | block}" *)
-	logic signed [COEF_WIDTH-1:0] rom [1:0];
+	logic signed [COEF_WIDTH-1:0] rom;
 	logic signed [COEF_WIDTH-1:0] rom_reg;
 
 	initial begin
 
-		rom[0] = COEF;
-		rom[1] = 16'h0000;
+		rom = COEF;
 
 	end
    
 	always_ff @(posedge clk_i) begin
 		
-		if (ena_i) begin
-		
-			rom_reg <= rom[0];
-		
-		end
+		rom_reg <= rom;
 	
 	end
 

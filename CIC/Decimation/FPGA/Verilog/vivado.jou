@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Apr 10 16:08:54 2026
+# Process ID         : 32800
+# Current directory  : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent30724 C:\Users\nikit\OneDrive\Desktop\GITHUB_PRJ\Digital-filters-portfolio\CIC\Decimation\FPGA\Verilog\cic_filter.xpr
+# Log file           : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/vivado.log
+# Journal file       : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog\vivado.jou
+# Running On         : Mykyta
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1497 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16908 MB
+# Swap memory        : 41947 MB
+# Total Virtual      : 58855 MB
+# Available Virtual  : 8172 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.xpr
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/fir_filter.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/fir_filter.sv
+export_ip_user_files -of_objects  [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.v] -no_script -reset -force -quiet
+remove_files  C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter.v
+add_files -norecurse -scan_for_includes {C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator.v C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/fir_filter.sv}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/nikit/OneDrive/Desktop/vivado_test_cic_filter/cic_decimator_tb.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb.v
+update_compile_order -fileset sim_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg
+source cic_decimator_tb.tcl
+current_wave_config {cic_filter_tb_behav.wcfg}
+add_wave {{/cic_decimator_tb/rst_in_i}} 
+current_wave_config {cic_filter_tb_behav.wcfg}
+add_wave {{/cic_decimator_tb/filter_data_input}} 
+current_wave_config {cic_filter_tb_behav.wcfg}
+add_wave {{/cic_decimator_tb/filter_data_output}} 
+run 2 ms
+run 2 ms
+save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg
+source cic_decimator_tb.tcl
+run 2 ms
+run 2 ms
+save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg}
+save_wave_config {C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Decimation/FPGA/Verilog/cic_filter_tb_behav.wcfg}
+close_sim

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Apr 12 16:38:20 2026
+# Process ID         : 24220
+# Current directory  : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent25880 C:\Users\nikit\OneDrive\Desktop\GITHUB_PRJ\Digital-filters-portfolio\CIC\Interpolation\FPGA\Verilog\cic_filter.xpr
+# Log file           : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog/vivado.log
+# Journal file       : C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog\vivado.jou
+# Running On         : Mykyta
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1498 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16908 MB
+# Swap memory        : 16929 MB
+# Total Virtual      : 33837 MB
+# Available Virtual  : 12203 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nikit/OneDrive/Desktop/GITHUB_PRJ/Digital-filters-portfolio/CIC/Interpolation/FPGA/Verilog/cic_filter.xpr
+update_compile_order -fileset sources_1
